@@ -1,6 +1,9 @@
 # jwt-lib
 Micro biblioteca JavaScript para gerenciamento de token JWT em localStorage. Os dados do payload são descriptografados em tempo de execução e somente o token JWT é armazenado no formato de string.
 
+### Token para teste
+#### eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEyMzU0NjQ3NCIsIm5hbWUiOiJQYXVsbyIsImVtYWlsIjoicGF1bG9AdGVzdGV0b2tlbi5jb20iLCJyb2xlIjoiYWRtaW4ifQ.A0Bk9R9DFLeGxqPbhIUK6AHFkFGByjCID2oRJ2CmUgY
+
 ## Descodifica um token JWT no formato algo64
 object : JWT.decode64(string token)
 
