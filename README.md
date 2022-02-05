@@ -27,3 +27,7 @@ string : JWT.getKey = function(string key)
 
 ## Verifica se uma chave existe no payload do token JWT armazenado e retorna um booleano true caso existe e false caso não exista
 bool : JWT.hasKey(key string) 
+
+### O métodos abaixo são apenas atalhos para o método de retorno “getKey”. A biblioteca presumo que dentro do payload de seu Token JWT existirá os seguintes dados, tais como: name, e-mail, first,last,role,image e id. 
+
+string : JWT.getId(), JWT.getName(), JWT.getRole(),JWT.getEmail(),JWT.getFirstName(),JWT.getLastName(),JWT.getImage()
