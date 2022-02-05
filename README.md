@@ -4,30 +4,31 @@ Micro biblioteca JavaScript para gerenciamento de token JWT em localStorage. Os 
 ### Token para teste
 #### eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEyMzU0NjQ3NCIsIm5hbWUiOiJQYXVsbyIsImVtYWlsIjoicGF1bG9AdGVzdGV0b2tlbi5jb20iLCJyb2xlIjoiYWRtaW4ifQ.A0Bk9R9DFLeGxqPbhIUK6AHFkFGByjCID2oRJ2CmUgY
 
-## Descodifica um token JWT no formato algo64
-object : JWT.decode64(string token)
+### object : JWT.decode64(string token)
+Descodifica um token JWT no formato algo64
 
-## Armazena o token JWT no formato algo64 em localStorage 
-void : JWT.setToken(string token)
+### void : JWT.setToken(string token)
+Armazena o token JWT no formato algo64 em localStorage 
 
-## Retorna o token descodificado no formato de objeto
-object : JWT.getData()
+### object : JWT.getData() 
+Retorna o token descodificado no formato de objeto
 
-## Verifica se o token existe e retorna um bool true ou false
-bool : JWT.hasToken()
+### bool : JWT.hasToken()
+Verifica se o token existe e retorna um bool true ou false
 
-## Retorna o token armazenado no formato de string no caso de sucesso ou undefined no caso de falha
-string : JWT.getToken()
+### string : JWT.getToken()
+Retorna o token armazenado no formato de string no caso de sucesso ou undefined no caso de falha
 
-## Remove o token armazenado e não retorna nenhum valor
-void : JWT.removeToken()
+### void : JWT.removeToken()
+Remove o token armazenado e não retorna nenhum valor
 
-## Pega uma índice/chave especifico do PAYLOAD e retorna o seu valor no caso de sucesso ou retorna undefined no caso de falha
-string : JWT.getKey = function(string key)
+### string : JWT.getKey = function(string key)
+Pega uma índice/chave especifico do PAYLOAD e retorna o seu valor no caso de sucesso ou retorna undefined no caso de falha
 
-## Verifica se uma chave existe no payload do token JWT armazenado e retorna um booleano true caso existe e false caso não exista
-bool : JWT.hasKey(key string) 
+### bool : JWT.hasKey(key string)
+Verifica se uma chave existe no payload do token JWT armazenado e retorna um booleano true caso existe e false caso não exista
+ 
 
 ### Os métodos abaixo são apenas atalhos para o método de retorno “getKey”. A biblioteca presume que dentro do payload de seu Token JWT existirá as seguintes chaves, tais como: name, email, first,last,role,image e id. 
 
-string : JWT.getId(), JWT.getName(), JWT.getRole(),JWT.getEmail(),JWT.getFirstName(),JWT.getLastName(),JWT.getImage()
+### string : JWT.getId(), JWT.getName(), JWT.getRole(),JWT.getEmail(),JWT.getFirstName(),JWT.getLastName(),JWT.getImage()
