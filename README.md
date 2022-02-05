@@ -19,7 +19,7 @@ string : JWT.getToken()
 ## Remove o token armazenado e não retorna nenhum valor
 void : JWT.removeToken()
 
-## Pega uma índice/chave especifico do PAYLOAD e retorna o seu valor no caso de sucesso e retorna undefined no caso de falha
+## Pega uma índice/chave especifico do PAYLOAD e retorna o seu valor no caso de sucesso ou retorna undefined no caso de falha
 string : JWT.getKey = function(string key)
 
 ## Verifica se uma chave existe no payload do token JWT armazenado e retorna um booleano true caso existe e false caso não exista
