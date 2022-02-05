@@ -1,5 +1,5 @@
 # jwt-lib
-##JWT.JS é uma micro biblioteca JavaScript para gerenciamento de tokens JWT em localStorage. Os dados do payload são descriptografados em tempo de execução e somente o token JWT é armazenado em string no formato de ALG64.
+## JWT.JS é uma micro biblioteca JavaScript para gerenciamento de tokens JWT em localStorage. Os dados do payload são descriptografados em tempo de execução e somente o token JWT é armazenado em string no formato de ALG64.
 
 #### Para utilizar o JWT.JS, você poderá baixar o arquivo de script jwt.js e  executar o seguinte exemplo de importação:  <script src=”jwt.js”></script>
 
