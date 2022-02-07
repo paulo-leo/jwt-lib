@@ -25,7 +25,7 @@ Retorna o token armazenado no formato de string no caso de sucesso ou undefined 
 ### void : JWT.removeToken()
 Remove o token armazenado e não retorna nenhum valor
 
-### string : JWT.getKey = function(string key)
+### string : JWT.getKey(string key)
 Pega uma índice/chave especifico do PAYLOAD e retorna o seu valor no caso de sucesso ou retorna undefined no caso de falha
 
 ### bool : JWT.hasKey(key string)
