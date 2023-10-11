@@ -1,0 +1,25 @@
+{
+  "name": "pl-jwt",
+  "version": "1.0.1",
+  "description": "JWT.JS é uma micro biblioteca JavaScript para gerenciamento de tokens JWT em localStorage.",
+  "main": "jwt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulo-leo/jwt-lib.git"
+  },
+  "keywords": [
+    "jwt",
+    "localstorage",
+    "auth",
+    "js"
+  ],
+  "author": "Paulo Leonardo da S. Cassimiro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paulo-leo/jwt-lib/issues"
+  },
+  "homepage": "https://github.com/paulo-leo/jwt-lib#readme"
+}
