@@ -71,3 +71,5 @@ JWT.getLastName = function(){
 JWT.getImage = function(){
    return JWT.getKey('image');
 };
+
+export default JWT;
