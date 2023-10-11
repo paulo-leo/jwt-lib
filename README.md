@@ -35,3 +35,8 @@ Verifica se uma chave existe no payload do token JWT armazenado e retorna um boo
 ### Os métodos abaixo são apenas atalhos para o método de retorno “getKey”. A biblioteca presume que dentro do payload de seu Token JWT existirá as seguintes chaves, tais como: name, email, first,last,role,image e id. 
 
 ### string : JWT.getId(), JWT.getName(), JWT.getRole(),JWT.getEmail(),JWT.getFirstName(),JWT.getLastName(),JWT.getImage()
+
+Para começar a usar o JWT.JS, instale-o em seu projeto via npm:
+
+```bash
+npm i pl-jwt
