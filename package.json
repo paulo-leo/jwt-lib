@@ -1,6 +1,6 @@
 {
   "name": "pl-jwt",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "JWT.JS é uma micro biblioteca JavaScript para gerenciamento de tokens JWT em localStorage.",
   "main": "jwt.js",
   "scripts": {
