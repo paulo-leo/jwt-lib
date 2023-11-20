@@ -2,11 +2,6 @@
 
 Esta é uma biblioteca JavaScript que oferece funcionalidades para gerenciar tokens JWT (JSON Web Tokens) em `localStorage` ou `sessionStorage`. Os dados do payload são decodificados dinamicamente, armazenando apenas o token no formato de string.
 
-Para começar a usar o JWT.JS, instale-o em seu projeto via npm:
-
-```bash
-npm i pl-jwt
-
 Token para teste: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEyMzU0NjQ3NCIsIm5hbWUiOiJQYXVsbyIsImVtYWlsIjoicGF1bG9AdGVzdGV0b2tlbi5jb20iLCJyb2xlIjoiYWRtaW4ifQ.A0Bk9R9DFLeGxqPbhIUK6AHFkFGByjCID2oRJ2CmUgY
 
 ## Configurações(opcionais)
@@ -118,4 +113,9 @@ Retorna o caminho da imagem do usuário que está no PAYLOAD do token JWT.
 ## Observações
 
 Esta documentação detalha os parâmetros e retornos das funções da biblioteca JWT. Certifique-se de consultar esta documentação para entender como utilizar cada função de forma adequada.
+
+Para começar a usar o JWT.JS, instale-o em seu projeto via npm:
+
+```bash
+npm i pl-jwt
 
