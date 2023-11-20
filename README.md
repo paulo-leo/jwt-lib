@@ -51,3 +51,66 @@ Verifica se o usuário está autenticado, opcionalmente verificando o papel/tipo
 ### `JWT.user(key: string, def: string = ''): any`
 
 Retorna os dados do usuário autenticado para uma chave específica ou um valor padrão se a chave não existir.
+
+## Funções Adicionais
+
+### `JWT.getKey(index: string): any`
+
+Pega um índice específico do PAYLOAD do token JWT e retorna o seu valor no caso de sucesso ou `undefined` no caso de falha.
+
+- `index`: Índice específico a ser obtido do PAYLOAD.
+- **Retorno**: O valor correspondente ao índice do PAYLOAD ou `undefined` se não houver valor correspondente.
+
+### `JWT.hasKey(index: string): boolean`
+
+Verifica se uma chave existe no PAYLOAD do token JWT armazenado e retorna um booleano indicando a existência.
+
+- `index`: Chave a ser verificada no PAYLOAD.
+- **Retorno**: `true` se a chave existir no PAYLOAD ou `false` se não existir.
+
+### `JWT.getId(): any`
+
+Retorna o ID do usuário que está no PAYLOAD do token JWT.
+
+- **Retorno**: O ID do usuário do PAYLOAD.
+
+### `JWT.getName(): any`
+
+Retorna o nome do usuário que está no PAYLOAD do token JWT.
+
+- **Retorno**: O nome do usuário do PAYLOAD.
+
+### `JWT.getRole(): any`
+
+Retorna a função do usuário que está no PAYLOAD do token JWT.
+
+- **Retorno**: A função do usuário do PAYLOAD.
+
+### `JWT.getEmail(): any`
+
+Retorna o e-mail do usuário que está no PAYLOAD do token JWT.
+
+- **Retorno**: O e-mail do usuário do PAYLOAD.
+
+### `JWT.getFirstName(): any`
+
+Retorna o primeiro nome do usuário que está no PAYLOAD do token JWT.
+
+- **Retorno**: O primeiro nome do usuário do PAYLOAD.
+
+### `JWT.getLastName(): any`
+
+Retorna o último nome do usuário que está no PAYLOAD do token JWT.
+
+- **Retorno**: O último nome do usuário do PAYLOAD.
+
+### `JWT.getImage(): any`
+
+Retorna o caminho da imagem do usuário que está no PAYLOAD do token JWT.
+
+- **Retorno**: O caminho da imagem do usuário do PAYLOAD.
+
+## Observações
+
+Esta documentação detalha os parâmetros e retornos das funções da biblioteca JWT. Certifique-se de consultar esta documentação para entender como utilizar cada função de forma adequada.
+
