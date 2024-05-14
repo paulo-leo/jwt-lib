@@ -4,7 +4,17 @@ Esta é uma biblioteca JavaScript que oferece funcionalidades para gerenciar tok
 
 Token para teste: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEyMzU0NjQ3NCIsIm5hbWUiOiJQYXVsbyIsImVtYWlsIjoicGF1bG9AdGVzdGV0b2tlbi5jb20iLCJyb2xlIjoiYWRtaW4ifQ.A0Bk9R9DFLeGxqPbhIUK6AHFkFGByjCID2oRJ2CmUgY
 
-Embora o jwt-lib não tenha sido inicialmente planejado para ser compatível com TypeScript, é possível utilizá-lo em projetos TypeScript sem problemas. No entanto, para evitar alertas no Intellisense, é recomendado adicionar a seguinte linha acima da declaração de importação do jwt-lib: // @ts-ignore.
+## Observações
+
+Esta documentação detalha os parâmetros e retornos das funções da biblioteca JWT. Certifique-se de consultar esta documentação para entender como utilizar cada função de forma adequada.
+
+## Para começar a usar o JWT.JS, instale-o em seu projeto via npm:
+
+```bash
+npm i pl-jwt
+```
+
+## Nota: Embora o jwt-lib não tenha sido inicialmente planejado para ser compatível com TypeScript, é possível utilizá-lo em projetos TypeScript sem problemas. No entanto, para evitar alertas no Intellisense, é recomendado adicionar a seguinte linha acima da declaração de importação do jwt-lib: // @ts-ignore.
    ```javascript
    // @ts-ignore
    import JWT from 'pl-jwt';
@@ -43,13 +53,14 @@ Remove o token armazenado.
 
 Verifica se o usuário atual está em um grupo de permissões específico.
 Exemplo de uso:
+ ```javascript
 let check = JWT.permissions(['createx'], [
         {
           roles: ['admin', 'cliente'],
           permissions: ['create', 'update']
         }
       ]) ? JWT.user('name') + " está permitido" : 'Não permitido';
-
+```
 ### `JWT.auth(roles: string | array = null): boolean`
 
 Verifica se o usuário está autenticado, opcionalmente verificando o papel/tipo/função do usuário.
@@ -116,12 +127,4 @@ Retorna o caminho da imagem do usuário que está no PAYLOAD do token JWT.
 
 - **Retorno**: O caminho da imagem do usuário do PAYLOAD.
 
-## Observações
-
-Esta documentação detalha os parâmetros e retornos das funções da biblioteca JWT. Certifique-se de consultar esta documentação para entender como utilizar cada função de forma adequada.
-
-Para começar a usar o JWT.JS, instale-o em seu projeto via npm:
-
-```bash
-npm i pl-jwt
 
