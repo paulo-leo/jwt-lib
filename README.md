@@ -13,8 +13,9 @@ Esta documentação detalha os parâmetros e retornos das funções da bibliotec
 ```bash
 npm i pl-jwt
 ```
+##
 
-## Nota: Embora o jwt-lib não tenha sido inicialmente planejado para ser compatível com TypeScript, é possível utilizá-lo em projetos TypeScript sem problemas. No entanto, para evitar alertas no Intellisense, é recomendado adicionar a seguinte linha acima da declaração de importação do jwt-lib: // @ts-ignore.
+Nota: Embora o jwt-lib não tenha sido inicialmente planejado para ser compatível com TypeScript, é possível utilizá-lo em projetos TypeScript sem problemas. No entanto, para evitar alertas no Intellisense, é recomendado adicionar a seguinte linha acima da declaração de importação do jwt-lib: // @ts-ignore.
    ```javascript
    // @ts-ignore
    import JWT from 'pl-jwt';
