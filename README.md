@@ -4,6 +4,12 @@ Esta é uma biblioteca JavaScript que oferece funcionalidades para gerenciar tok
 
 Token para teste: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEyMzU0NjQ3NCIsIm5hbWUiOiJQYXVsbyIsImVtYWlsIjoicGF1bG9AdGVzdGV0b2tlbi5jb20iLCJyb2xlIjoiYWRtaW4ifQ.A0Bk9R9DFLeGxqPbhIUK6AHFkFGByjCID2oRJ2CmUgY
 
+Embora o jwt-lib não tenha sido inicialmente planejado para ser compatível com TypeScript, é possível utilizá-lo em projetos TypeScript sem problemas. No entanto, para evitar alertas no Intellisense, é recomendado adicionar a seguinte linha acima da declaração de importação do jwt-lib: // @ts-ignore.
+   ```javascript
+   // @ts-ignore
+   import JWT from 'pl-jwt';
+```
+
 ## Configurações(opcionais)
 ###  `JWT.name = 'Nome_do_seu_token'`
 
