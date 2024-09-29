@@ -32,6 +32,12 @@ Nota: Embora o jwt-lib não tenha sido inicialmente planejado para ser compatív
 
 Define o nome do token que será salvo
 
+Define o nome do objeto de permissões que será usado
+### JWT.permissionName = 'permissions';
+
+Define o nome do objeto de role que será usado
+### JWT.roleName = 'role';
+
 ### `JWT.storage = true`
 
 Define se o armazenamento será em localStorage(true) ou sessionStorage(false)
@@ -56,18 +62,7 @@ Retorna o token armazenado como string ou `undefined` se não houver token.
 
 Remove o token armazenado.
 
-### `JWT.permissions(permissions: array, groupsOfpermissions: object[], all: string | array): boolean`
 
-Verifica se o usuário atual está em um grupo de permissões específico.
-Exemplo de uso:
- ```javascript
-let check = JWT.permissions(['createx'], [
-        {
-          roles: ['admin', 'cliente'],
-          permissions: ['create', 'update']
-        }
-      ]) ? JWT.user('name') + " está permitido" : 'Não permitido';
-```
 ### `JWT.auth(roles: string | array = null): boolean`
 
 Verifica se o usuário está autenticado, opcionalmente verificando o papel/tipo/função do usuário.
@@ -135,3 +130,6 @@ Retorna o caminho da imagem do usuário que está no PAYLOAD do token JWT.
 - **Retorno**: O caminho da imagem do usuário do PAYLOAD.
 
 
+### `JWT.hasPermission(permission: string | array, (opcional) permissionPerson = array) : boolean`
+
+Verifica se no PAYLOAD de permissões tem a permissão que deseja buscar.
